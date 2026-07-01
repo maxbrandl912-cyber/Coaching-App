@@ -1,0 +1,83 @@
+:root {
+  --bg: #0a0b0d;
+  --surface: #14161a;
+  --surface2: #1c1f24;
+  --border: #272a30;
+  --text: #f2f1ed;
+  --text-dim: #9a9da3;
+  --text-faint: #5c6066;
+  --brass: #c9a66b;
+  --brass-soft: #3a3322;
+  --sage: #7fae92;
+  --terracotta: #c76b5d;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+input, select, textarea {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 14px;
+  width: 100%;
+  outline: none;
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn-primary {
+  background: var(--brass);
+  color: #1a140a;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 16px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.btn-ghost {
+  background: var(--surface2);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 16px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.label {
+  color: var(--text-faint);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 10px;
+  margin-bottom: 8px;
+}
+
+.page {
+  max-width: 460px;
+  margin: 0 auto;
+  padding: 24px 18px 80px;
+  min-height: 100vh;
+}
+
+.stack > * + * { margin-top: 12px; }
